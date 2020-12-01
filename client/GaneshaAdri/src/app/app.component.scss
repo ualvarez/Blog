@@ -1,0 +1,17 @@
+:host {
+    min-height: 100vh;
+  }
+  :host > main {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+  }
+  :host > main > article {
+    flex: 1 1 auto;
+  }
+  
+  @media (min-width: 768px) {
+    :host > main {
+      flex-direction: row;
+    }
+  }

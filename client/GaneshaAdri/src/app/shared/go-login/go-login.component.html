@@ -1,0 +1,7 @@
+<div *ngIf='usuario'>
+    <p>'Bienvenido ' + {{this.usuario.email}}</p>
+    <button (click)='this.logout()'>Cerrar sesión</button>
+</div>
+<div *ngIf='!usuario'>
+   <a href="#/login">Iniciar Sesión</a>
+</div>
